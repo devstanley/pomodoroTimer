@@ -1,0 +1,265 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-image: url('assets/umbrella.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#timer {
+    font-size: 120px;
+    color: white;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: -27px;
+}
+
+#startButton, .imageButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#startButton {
+    background-color: #111184;
+    border-radius: 50px;
+    width: 140px;
+}
+
+#startButton:hover {
+    background-color: white;
+    color: #111184;
+}
+
+.imageButton {
+    margin-right: -35px;
+}
+
+.imageButton:hover {
+    transform: scale(1.1);
+}
+
+.imageButton img {
+    width: 60px;
+    height: 60px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.closeButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#themeDropdown {
+    border: #111184 3px solid;
+    width: 400px;
+}
+
+.modalContent h2 {
+    font-size: 30px;
+}
+
+.themeSection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.themeSection h3 {
+    margin-bottom: 10px;
+}
+
+.themeSection {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.themeSection h3 {
+    margin-bottom: 10px;
+}
+
+#themeDropdown {
+    border-radius: 10px;
+    border: #111184 4px solid;
+    height: 35px;
+    width: 300px;
+}
+
+#themeDropdown option {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.timerSection {
+    margin-top: 20px;
+    text-align: left; 
+}
+
+.timerSection h3 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.timerInputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timerInputs input {
+    width: 120px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: #111184 4px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.timerInputs input:focus {
+    outline: none;
+}
+
+.soundSection {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.soundSection h3 {
+    margin-bottom: 10px;
+}
+
+#soundDropdown {
+    border-radius: 10px;
+    border: #111184 4px solid;
+    height: 35px;
+    width: 300px;
+}
+
+#soundDropdown option {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.alarmSection {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.alarmSection h3 {
+    margin-bottom: 10px;
+}
+
+#alarmSlider {
+    width: 100%;
+    accent-color: #111184;
+}
+
+.saveButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+#saveButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #111184;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#saveButton:hover {
+    background-color: #3333cc;
+}
+
+.bottomLeftButtons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.bottomButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #111184;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bottomButton:hover {
+    background-color: white;
+    color: #111184;
+}
+
+.bottomButton:focus {
+    background-color: white;
+    border: #111184 2px solid;
+    color: #111184;
+    outline: none;
+    transform: scale(0.95);
+}
+
+.bottomButton:active {
+    background-color: white;
+    color: #111184;
+}

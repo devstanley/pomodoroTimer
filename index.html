@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="timer.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Pomodoro Timer - Made by Stanley</title>
+</head>
+<body>
+    <div id="timer">25:00</div>
+    <div class="buttonContainer">
+        <button id="startButton">start</button>
+        <button class="imageButton"><img src="assets/reload.png" alt="Button 1"></button>
+        <button class="imageButton" id="settingsButton"><img src="assets/settings.png" alt="Button 2"></button>
+    </div>
+
+    <div id="settingsModal" class="modal">
+        <div class="modalContent">
+            <span class="closeButton">&times;</span>
+            <div class="themeSection">
+                <h3>Theme</h3>
+                <select id="themeDropdown">
+                    <option value="default">Dark Umbrella</option>
+                    <option value="lights">Northern Lights</option>
+                    <option value="sky">Sky View</option>
+                    <option value="moon">Purple Moon</option>
+                </select>
+            </div>
+            <div class="timerSection">
+                <h3>Timers</h3>
+                <div class="timerInputs">
+                    <input type="number" id="mainTimer" placeholder="Pomodoro" min="1" max="60">
+                    <input type="number" id="shortBreak" placeholder="Short" min="1" max="10">
+                    <input type="number" id="longBreak" placeholder="Long" min="1" max="30">
+                </div>
+            </div>
+            <div class="soundSection">
+                <h3>Sound</h3>
+                <select id="soundDropdown">
+                    <option value="default">Warning</option>
+                    <option value="fortnite">Fortnite</option>
+                    <option value="purge">Purge</option>
+                </select>
+            </div>
+            <div class="alarmSection">
+                <h3>Alarm</h3>
+                <input type="range" id="alarmSlider" min="0" max="100" value="50">
+            </div>
+            <div class="saveButtonContainer">
+                <button id="saveButton">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottomLeftButtons">
+        <button class="bottomButton">pomodoro</button>
+        <button class="bottomButton">short</button>
+        <button class="bottomButton">long</button>
+    </div>
+</body>
+</html>
